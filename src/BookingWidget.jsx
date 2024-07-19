@@ -112,7 +112,7 @@ export default function BookingWidget({ place }) {
                  value={numberOfGuests}
                  onChange={ev => setNumberOfGuests(ev.target.value)} />
         </div>
-        {numberOfNights > 0 && (
+{/*         {numberOfNights > 0 && ( */}
           <div className="py-3 px-4 border-t">
             <label>Your full name:</label>
             <input type="text"
@@ -123,7 +123,7 @@ export default function BookingWidget({ place }) {
                    value={phone}
                    onChange={ev => setPhone(ev.target.value)} />
           </div>
-        )}
+{/*         )} */}
       </div>
       <button onClick={initiateBooking} className="primary mt-4">
         Book this place
